@@ -1,34 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Blog preview card</title>
 
-  Learning
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
 
-  Published 21 Dec 2023
+      @font-face {
+        font-family: Figtree-Italic;
+        src: url(/assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+      }
+      @font-face {
+        font-family: Figtree;
+        src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+      }
+      @font-face {
+        font-family: Figtree-Extrabold;
+        src: url(/assets/fonts/static/Figtree-ExtraBold.ttf);
+      }
+      @font-face {
+        font-family: Figtree-Semibold;
+        src: url(/assets/fonts/static/Figtree-SemiBold.ttf);
+      }
 
-  HTML & CSS foundations
+      * {
+        font-family: Figtree;
+      }
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+    </style>
+  </head>
+  <body>
+    <main class="min-h-screen w-full bg-yellow-400">
+      <div class="flex h-screen w-full flex-col items-center justify-center">
+        <div class="min-h-[450px] w-[380px] rounded-2xl border border-black bg-white p-5 shadow-[10px_10px] shadow-black flex gap-3 flex-col">
 
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <img src="/assets/images/illustration-article.svg" alt="" class="h-[200px] w-full rounded-2xl" />
+
+            <span class="w-max rounded-md bg-yellow-400 p-2 text-sm font-bold">Learning</span>
+            <span class="text-sm font-semibold">Published 21 Dec 2023</span>
+
+            <h3 class="text-xl font-bold hover:text-yellow-400">
+              <a href="#"> HTML & CSS foundations </a>
+            </h3>
+
+            <p class="text-slate-500 text-base font-light">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+            <div>
+              <a href="#" class="flex items-center gap-2">
+                <img src="/assets/images/image-avatar.webp" alt="" class="size-[30px] rounded-full" />
+                <span class="text-sm font-bold">Greg Hooper</span>
+              </a>
+            </div>
+
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Guido Castrogiovanni</a>.</div>
+  </body>
 </html>
